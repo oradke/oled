@@ -2,6 +2,8 @@
 
 A small Linux status display for a 128x32 SSD1306 OLED connected over I2C. It shows the device hostname and CPU temperature in the header, then cycles through the IPv4 addresses of active network interfaces. The final page remains on the OLED after the program exits.
 
+I created this for the Raspberry Pi Fan Expansion Board Plus 0.91 OLED V1.0 (https://wiki.52pi.com/index.php?title=EP-0152).
+
 The program is designed to run briefly from cron rather than stay running continuously. The installer schedules an update every five minutes, so the display refreshes regularly without leaving a Python process running between updates.
 
 ## Requirements
